@@ -1,0 +1,208 @@
+/* Ark Dawn Herbal Health Group - static build of Figma frame "ark-dawn-herbal-website-v2" (node 3:1093).
+   Utility classes mirror the Figma Dev Mode export 1:1 so layout values match the design. */
+*,*::before,*::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#faf8f4;color:#152016;font-family:'Gothic A1','Noto Sans SC',sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.88}
+.page{width:100%;max-width:1440px;margin:0 auto;overflow:hidden;background:#faf8f4}
+.sec{scroll-margin-top:0}
+/* Figma 'normal' line-height = the Latin font's metrics (Gothic A1 ~1.25, Cormorant ~1.21). Browsers would use the
+   taller CJK fallback font's metrics for Chinese text, so pin 'normal' to the Figma ratio. */
+body{--lhn:1.25}
+:where(.leading-\[normal\]) :where(*){line-height:var(--lhn,normal)}
+.\[text-decoration-skip-ink\:none\]{text-decoration-skip-ink:none}
+.\[text-underline-position\:from-font\]{text-underline-position:from-font}
+.\[word-break\:break-word\]{word-break:break-word}
+.absolute{position:absolute}
+.bg-\[\#1e3524\]{background-color:#1e3524}
+.bg-\[\#2c4633\]{background-color:#2c4633}
+.bg-\[\#c5a059\]{background-color:#c5a059}
+.bg-\[\#f2ede4\]{background-color:#f2ede4}
+.bg-\[\#f4f1ea\]{background-color:#f4f1ea}
+.bg-\[\#faf8f4\]{background-color:#faf8f4}
+.bg-\[rgba\(0\,0\,0\,0\)\]{background-color:rgba(0,0,0,0)}
+.bg-\[rgba\(30\,53\,36\,0\.05\)\]{background-color:rgba(30,53,36,0.05)}
+.bg-\[rgba\(30\,53\,36\,0\.85\)\]{background-color:rgba(30,53,36,0.85)}
+.bg-white{background-color:#fff}
+.block{display:block}
+.border{border-width:1px}
+.border-\[\#1e3524\]{border-color:#1e3524}
+.border-\[\#c5a059\]{border-color:#c5a059}
+.border-\[\#e2eae5\]{border-color:#e2eae5}
+.border-b{border-bottom-width:1px}
+.border-solid{border-style:solid}
+.content-stretch{align-content:stretch}
+.decoration-from-font{text-decoration-thickness:from-font}
+.decoration-solid{text-decoration-style:solid}
+.flex{display:flex}
+.flex-\[1_0_0\]{flex:1 0 0}
+.flex-col{flex-direction:column}
+.font-bold{font-weight:700}
+.font-light{font-weight:300}
+.font-medium{font-weight:500}
+.font-normal{font-weight:400}
+.gap-\[10px\]{gap:10px}
+.gap-\[12px\]{gap:12px}
+.gap-\[16px\]{gap:16px}
+.gap-\[20px\]{gap:20px}
+.gap-\[24px\]{gap:24px}
+.gap-\[28px\]{gap:28px}
+.gap-\[2px\]{gap:2px}
+.gap-\[32px\]{gap:32px}
+.gap-\[36px\]{gap:36px}
+.gap-\[48px\]{gap:48px}
+.gap-\[4px\]{gap:4px}
+.gap-\[60px\]{gap:60px}
+.gap-\[6px\]{gap:6px}
+.gap-\[80px\]{gap:80px}
+.gap-\[8px\]{gap:8px}
+.gap-px{gap:1px}
+.h-0{height:0}
+.h-\[520px\]{height:520px}
+.h-\[540px\]{height:540px}
+.h-full{height:100%}
+.inset-0{inset:0}
+.inset-\[-1px_0_0_0\]{inset:-1px 0 0 0}
+.items-baseline{align-items:baseline}
+.items-center{align-items:center}
+.items-end{align-items:flex-end}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.leading-\[0\]{line-height:0}
+.leading-\[1\.05\]{line-height:1.05}
+.leading-\[1\.1\]{line-height:1.1}
+.leading-\[1\.4\]{line-height:1.4}
+.leading-\[1\.5\]{line-height:1.5}
+.leading-\[1\.6\]{line-height:1.6}
+.leading-\[1\.7\]{line-height:1.7}
+.leading-\[normal\]{line-height:var(--lhn,normal)}
+.line-through{text-decoration-line:line-through}
+.max-w-none{max-width:none}
+.min-w-full{min-width:100%}
+.min-w-px{min-width:1px}
+.not-italic{font-style:normal}
+.object-cover{object-fit:cover}
+.opacity-60{opacity:0.6}
+.opacity-70{opacity:0.7}
+.opacity-80{opacity:0.8}
+.opacity-90{opacity:0.9}
+.overflow-clip{overflow:clip}
+.p-\[10px\]{padding:10px}
+.p-\[16px\]{padding:16px}
+.p-\[20px\]{padding:20px}
+.p-\[28px\]{padding:28px}
+.p-\[32px\]{padding:32px}
+.p-\[36px\]{padding:36px}
+.p-\[40px\]{padding:40px}
+.pb-\[10px\]{padding-bottom:10px}
+.pb-\[40px\]{padding-bottom:40px}
+.pb-\[64px\]{padding-bottom:64px}
+.pb-\[80px\]{padding-bottom:80px}
+.pointer-events-none{pointer-events:none}
+.pt-\[24px\]{padding-top:24px}
+.pt-\[80px\]{padding-top:80px}
+.px-\[10px\]{padding-left:10px;padding-right:10px}
+.px-\[32px\]{padding-left:32px;padding-right:32px}
+.px-\[80px\]{padding-left:80px;padding-right:80px}
+.py-\[120px\]{padding-top:120px;padding-bottom:120px}
+.py-\[12px\]{padding-top:12px;padding-bottom:12px}
+.py-\[140px\]{padding-top:140px;padding-bottom:140px}
+.py-\[20px\]{padding-top:20px;padding-bottom:20px}
+.py-\[24px\]{padding-top:24px;padding-bottom:24px}
+.py-\[4px\]{padding-top:4px;padding-bottom:4px}
+.relative{position:relative}
+.rounded-\[12px\]{border-radius:12px}
+.rounded-\[16px\]{border-radius:16px}
+.rounded-\[20px\]{border-radius:20px}
+.rounded-\[24px\]{border-radius:24px}
+.rounded-\[4px\]{border-radius:4px}
+.self-stretch{align-self:stretch}
+.shrink-0{flex-shrink:0}
+.size-\[14px\]{width:14px;height:14px}
+.size-\[24px\]{width:24px;height:24px}
+.size-\[40px\]{width:40px;height:40px}
+.size-\[48px\]{width:48px;height:48px}
+.size-full{width:100%;height:100%}
+.text-\[\#152016\]{color:#152016}
+.text-\[\#1e3524\]{color:#1e3524}
+.text-\[\#2c4633\]{color:#2c4633}
+.text-\[\#59685a\]{color:#59685a}
+.text-\[\#869782\]{color:#869782}
+.text-\[\#c5a059\]{color:#c5a059}
+.text-\[\#f2ede4\]{color:#f2ede4}
+.text-\[0px\]{font-size:0px}
+.text-\[10px\]{font-size:10px}
+.text-\[11px\]{font-size:11px}
+.text-\[12px\]{font-size:12px}
+.text-\[13px\]{font-size:13px}
+.text-\[14px\]{font-size:14px}
+.text-\[15px\]{font-size:15px}
+.text-\[16px\]{font-size:16px}
+.text-\[18px\]{font-size:18px}
+.text-\[20px\]{font-size:20px}
+.text-\[22px\]{font-size:22px}
+.text-\[28px\]{font-size:28px}
+.text-\[32px\]{font-size:32px}
+.text-\[40px\]{font-size:40px}
+.text-\[48px\]{font-size:48px}
+.text-\[56px\]{font-size:56px}
+.text-\[68px\]{font-size:68px}
+.text-\[9px\]{font-size:9px}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-white{color:#fff}
+.uppercase{text-transform:uppercase}
+.w-\[180px\]{width:180px}
+.w-\[220px\]{width:220px}
+.w-\[260px\]{width:260px}
+.w-\[400px\]{width:400px}
+.w-\[405px\]{width:405px}
+.w-\[420px\]{width:420px}
+.w-\[515px\]{width:515px}
+.w-\[733px\]{width:733px}
+.w-\[820px\]{width:820px}
+.w-\[843px\]{width:843px}
+.w-\[min-content\]{width:min-content}
+.w-full{width:100%}
+.whitespace-nowrap{white-space:nowrap}
+/* font family + weight from Figma font style names (override generic weight utilities) */
+.font-\[\'Cormorant_Garamond\:Bold\'\]{font-family:'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', serif;font-weight:700;--lhn:1.211}
+.font-\[\'Cormorant_Garamond\:Light\'\]{font-family:'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', serif;font-weight:300;--lhn:1.211}
+.font-\[\'Cormorant_Garamond\:Regular\'\]{font-family:'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', serif;font-weight:400;--lhn:1.211}
+.font-\[\'Gothic_A1\:Bold\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:700;--lhn:1.25}
+.font-\[\'Gothic_A1\:ExtraBold\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:800;--lhn:1.25}
+.font-\[\'Gothic_A1\:Light\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:300;--lhn:1.25}
+.font-\[\'Gothic_A1\:Medium\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:500;--lhn:1.25}
+.font-\[\'Gothic_A1\:Regular\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:400;--lhn:1.25}
+.font-\[\'Gothic_A1\:SemiBold\'\]{font-family:'Gothic A1', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;font-weight:600;--lhn:1.25}
+
+/* ---------- Responsive fallback (design is desktop 1440; this stacks content on small screens) ---------- */
+@media (max-width: 1100px){
+  .page [class*="w-["]{width:100% !important;max-width:100%}
+  .page .flex:not(.flex-col){flex-wrap:wrap}
+  .page .px-\[80px\]{padding-left:32px;padding-right:32px}
+  .page .gap-\[80px\]{gap:40px}
+  .sec-nav{flex-wrap:wrap;gap:16px}
+}
+@media (max-width: 760px){
+  .page .whitespace-nowrap{white-space:normal}
+  .page .flex-\[1_0_0\]{flex:1 1 100%}
+  .page .px-\[80px\]{padding-left:20px;padding-right:20px}
+  .page .py-\[120px\],.page .py-\[140px\]{padding-top:64px;padding-bottom:64px}
+  .page .pt-\[80px\]{padding-top:40px}
+  .page .pb-\[80px\],.page .pb-\[64px\]{padding-bottom:40px}
+  .page .p-\[40px\],.page .p-\[36px\]{padding:24px}
+  .page .gap-\[80px\],.page .gap-\[60px\],.page .gap-\[48px\]{gap:32px}
+  .page .text-\[68px\]{font-size:40px}
+  .page .text-\[56px\]{font-size:36px}
+  .page .text-\[48px\]{font-size:34px}
+  .page .text-\[40px\]{font-size:30px}
+  .page .text-\[32px\]{font-size:24px}
+  .page .h-\[520px\],.page .h-\[540px\]{height:300px}
+  .sec-nav [data-name="nav-links"]{display:none}
+  .sec-nav{justify-content:space-between}
+  .sec-footer [data-name="footer-top"]{row-gap:28px}
+}
